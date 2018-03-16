@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1079.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="start.StartPageController">
+   <top>
+      <HBox alignment="CENTER_LEFT" spacing="20.0" style="-fx-background-color: #191919;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="home" onAction="#actionHandler" prefHeight="55.0" prefWidth="139.0" ripplerFill="#fff056" text=" Home" textFill="WHITE">
+               <font>
+                  <Font name="Ubuntu Light" size="20.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#dfe2db" glyphName="HOME" size="25" />
+               </graphic></JFXButton>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </top>
+   <center>
+      <AnchorPane prefHeight="652.0" prefWidth="1079.0" style="-fx-background-color: #1a33D5; -fx-background-size: cover;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="165.0" layoutY="197.0" prefHeight="131.0" prefWidth="800.0" text="Welcome To The OS Simulator" textFill="WHITE">
+               <font>
+                  <Font name="TakaoPGothic" size="50.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="WHITE" glyphName="LINUX" layoutX="533.0" layoutY="405.0" size="90" wrappingWidth="64.42856979370117" />
+            <JFXButton fx:id="newSimulation" buttonType="RAISED" graphicTextGap="6.0" layoutX="433.0" layoutY="456.0" onAction="#actionHandler" prefHeight="55.0" prefWidth="265.0" ripplerFill="#0000d4" style="-fx-background-color: rgb(0, 192, 239); -fx-background-image: url(&quot;/home/praveen/Downloads/test.jpg&quot;);" text="Start New Simulation" textFill="WHITE">
+               <font>
+                  <Font name="Ubuntu Light" size="20.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="CHEVRON_CIRCLE_RIGHT" size="25" wrappingWidth="21.428569793701172" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="exit" buttonType="RAISED" graphicTextGap="6.0" layoutX="489.0" layoutY="535.0" onAction="#actionHandler" prefHeight="57.0" prefWidth="153.0" ripplerFill="RED" style="-fx-background-color: #DE1B1B;" text="Exit" textFill="WHITE">
+               <font>
+                  <Font name="Ubuntu Light" size="20.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#dfe2db" glyphName="REMOVE" size="25" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
