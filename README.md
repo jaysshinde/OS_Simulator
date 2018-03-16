@@ -2,7 +2,7 @@
 A simulation of operating system concepts using Java and JavaFX
 
 ### Prerequisites
-1.  Java JDK (prefarably Java SE than Default Java package) -version 1.8_161 and above
+1.  Java JDK (prefarably Java SE than Default Java package) -version 1.8.0_161 and above
 2.  Jfoenix -version 8.0.1 and above
 3.  FontawesomeFx -version 8.9 and above
 4.  JavaFX -version 2.0 and above
