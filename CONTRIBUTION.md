@@ -5,7 +5,7 @@ When contributing to this repository, please follow the following instructions.
 
 ## Brief note on the file structure
 
-* In this repository the souce cone is in [src](OS%20Simulator/src).
+* In this repository the souce code is in [src](OS%20Simulator/src).
 * The [src](OS%20Simulator/src) directory contains
   * [home](OS%20Simulator/src/home) :- This directory contains info about the Home Page.
   * [NewSimulation](OS%20Simulator/src/newSimulation) :- This directory contains info about a page, that lets you choose a New Simulation.
@@ -28,7 +28,7 @@ i.e ```<classs of the simulations>_<the simulation>``` For example,If the simula
  * Push the work that you have completed into your local repository.
  * Create Pull Request.
  
- ## How to work on the Project
+ ## How to work on the Project?
  
  * Clone your forked repository into your computer.
  * Go into the ```os-simulator``` directory.
