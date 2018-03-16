@@ -25,7 +25,7 @@ i.e ```<classs of the simulations>_<the simulation>``` For example,If the simula
  ## Creating Pull Request
  
  * Fork the repository.
- * Push the work that you have completed into your local repository.
+ * Push the work that you have completed into your local repository (i.e the forked repo).
  * Create Pull Request.
  
  ## How to work on the Project?
