@@ -1,0 +1,40 @@
+group 'com.os'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    dependencies {
+        classpath group: 'de.dynamicfiles.projects.gradle.plugins', name: 'javafx-gradle-plugin', version: '8.8.2'
+    }
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+}
+
+apply plugin: 'java'
+sourceCompatibility = 1.8
+
+repositories {
+    jcenter()
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies{
+    compile 'com.jfoenix:jfoenix:8.0.3' // Java 8
+    compile 'de.jensd:fontawesomefx-commons:8.11'
+    compile 'de.jensd:fontawesomefx-fontawesome:4.6.1-2'
+    compile 'de.jensd:fontawesomefx-materialdesignfont:1.4.57-2'
+    compile 'de.jensd:fontawesomefx-materialicons:2.1-2'
+    compile 'de.jensd:fontawesomefx-octicons:3.3.0-2'
+    compile 'de.jensd:fontawesomefx-weathericons:2.0-2'
+    compile 'de.jensd:fontawesomefx-icons525:2.0-2'
+}
+
+apply plugin: 'javafx-gradle-plugin'
+
+jfx {
+    mainClass = 'start.OSSimulator'
+    vendor = 'com.os'
+}

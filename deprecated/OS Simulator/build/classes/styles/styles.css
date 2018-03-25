@@ -1,0 +1,57 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13 Mar, 2018, 12:46:21 AM
+    Author     : praveen
+*/
+.anchor1{
+    -fx-background-color: linear-gradient(to bottom, #ff0038,#ffce38);
+
+}
+
+.anchor2{
+    -fx-background-color: linear-gradient(to bottom, #ffce38,#ffffff);
+
+}
+.jfx-hamburger{
+    -fx-spacing: 4;
+    -fx-cursor: hand;
+    -fx-padding: 3px;
+}
+
+.jfx-hamburger StackPane{
+    -fx-pref-width: 35px;
+    -fx-pref-height: 4px;
+    -fx-background-color : #ffffff;
+    -fx-background-radius :3px;
+}
+
+.node-list-button{
+    -fx-background-color: transparent;
+    -fx-pref-height: 230px;
+    -fx-pref-width: 230px;
+    /*-fx-background-image: url('file:/home/praveen/Downloads/152097033099132712.jpeg') ;*/
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat; 
+    -fx-background-size: cover,auto;
+    -fx-background-radius: 230px;
+    
+    -fx-min-width: -fx-pref-width;
+    -fx-max-width: -fx-pref-width;
+    -fx-min-height: -fx-pref-height;
+    -fx-max-height: -fx-pref-height;
+    -fx-wrap-text: true;
+    -fx-text-fill: #ffffff;
+    -fx-text-alignment: center;
+    -fx-font: 25px "sans-serif";
+    -fx-padding: 10px;
+}
+
+.node-list-button:hover{
+    -fx-background-color: #F3FAB6;
+    -fx-text-fill: #005a31;
+}
+
