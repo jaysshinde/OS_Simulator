@@ -1,0 +1,250 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 20 Mar, 2018, 8:31:03 PM
+    Author     : praveen
+*/
+
+.status-1{
+    -fx-background-color: #4cb5f5;
+    -fx-text-fill: #b34a0a;
+    -fx-font: 16px "sans-serif";
+}
+
+.status-2{
+    -fx-background-color: #b7b8b6;
+    -fx-text-fill: #484749;
+    -fx-font: 16px "sans-serif";
+}
+
+.status-3{
+    -fx-background-color: #34675c;
+    -fx-text-fill: #cb98a3;
+    -fx-font: 16px "sans-serif";
+}
+
+.status-4{
+    -fx-background-color: #b3c100;
+    -fx-text-fill: #4c3eff;
+    -fx-font: 16px "sans-serif";
+}
+
+.status-5{
+    -fx-background-color: #f4cc70;
+    -fx-text-fill: #0b338f;
+    -fx-font: 16px "sans-serif";
+}
+
+.status-6{
+    -fx-background-color: #de7a22;
+    -fx-text-fill: #2185dd;
+    -fx-font: 16px "sans-serif";
+}
+
+.status-7{
+    -fx-background-color: #20948b;
+    -fx-text-fill: #df6b74;
+    -fx-font: 16px "sans-serif";
+}
+
+.status-8{
+    -fx-background-color: #1995ad;
+    -fx-text-fill: #e66a52;
+    -fx-font: 16px "sans-serif";
+}
+
+.status-9{
+    -fx-background-color: #011a27;
+    -fx-text-fill: #fee5d8;
+    -fx-font: 16px "sans-serif";
+}
+
+.status-10{
+    -fx-background-color: #ffd64d;
+    -fx-text-fill: #0029b2;
+    -fx-font: 16px "sans-serif";
+}
+
+.status-11{
+    -fx-background-color: #f52549;
+    -fx-text-fill: #0adab6;
+    -fx-font: 16px "sans-serif";
+}
+
+.status-12{
+    -fx-background-color: #50312f;
+    -fx-text-fill: #afced0;
+    -fx-font: 16px "sans-serif";
+}
+
+.status-13{
+    -fx-background-color: #c6d166;
+    -fx-text-fill: #392e99;
+    -fx-font: 16px "sans-serif";
+}
+
+.status-14{
+    -fx-background-color: #f62a00;
+    -fx-text-fill: #cb98a3;
+    -fx-font: 16px "sans-serif";
+}
+
+.status-15{
+    -fx-background-color: #258039;
+    -fx-text-fill: #09d5ff;
+    -fx-font: 16px "sans-serif";
+}
+
+.status-16{
+    -fx-background-color: #31a9b8;
+    -fx-text-fill: #cb98a3;
+    -fx-font: 16px "sans-serif";
+}
+
+
+.status-17{
+    -fx-background-color: #b9d9c3;
+    -fx-text-fill: #ce5647;
+    -fx-font: 16px "sans-serif";
+}
+
+.status18{
+    -fx-background-color: #752a07;
+    -fx-text-fill: #8ad5f8;
+    -fx-font: 16px "sans-serif";
+}
+
+.status-19{
+    -fx-background-color: #fbcb7b;
+    -fx-text-fill: #043484;
+    -fx-font: 16px "sans-serif";
+}
+
+.status-20{
+    -fx-background-color: #eb5e30;
+    -fx-text-fill: #cb98a3;
+    -fx-font: 16px "sans-serif";
+}
+
+.status-21{
+    -fx-background-color: #4d648d;
+    -fx-text-fill: #14a1cf;
+    -fx-font: 16px "sans-serif";
+}
+
+.status-22{
+    -fx-background-color: #d0e1f9;
+    -fx-text-fill: #2f1e06;
+    -fx-font: 16px "sans-serif";
+}
+
+.status-23{
+    -fx-background-color: #f9a603;
+    -fx-text-fill: #0659fc;
+    -fx-font: 16px "sans-serif";
+}
+
+.status-24{
+    -fx-background-color: #c9a66b;
+    -fx-text-fill: #365994;
+    -fx-font: 16px "sans-serif";
+}
+
+.status-25{
+    -fx-background-color: #b8d20b;
+    -fx-text-fill: #cb98a3;
+    -fx-font: 16px "sans-serif";
+}
+
+.status-26{
+    -fx-background-color: #867666;
+    -fx-text-fill: #472df4;
+    -fx-font: 16px "sans-serif";
+}
+
+.status-28{
+    -fx-background-color: #68a225;
+    -fx-text-fill: #975dda;
+    -fx-font: 16px "sans-serif";
+}
+
+.status-29{
+    -fx-background-color: #523634;
+    -fx-text-fill: #adc9cb;
+    -fx-font: 16px "sans-serif";
+}
+
+
+.status-30{
+    -fx-background-color: #f79b77;
+    -fx-text-fill: #cb98a3;
+    -fx-font: 16px "sans-serif";
+}
+
+.status-31{
+    -fx-background-color: #005a31;
+    -fx-text-fill: #086488;
+    -fx-font: 16px "sans-serif";
+}
+
+.status-32{
+    -fx-background-color: #2988bc;
+    -fx-text-fill: #d67743;
+    -fx-font: 16px "sans-serif";
+}
+
+.status-33{
+    -fx-background-color: #ed8c72;
+    -fx-text-fill: #12738d;
+    -fx-font: 16px "sans-serif";
+}
+
+.status-34{
+    -fx-background-color: #e8a735;
+    -fx-text-fill: #1758ca;
+    -fx-font: 16px "sans-serif";
+}
+
+.status-35{
+    -fx-background-color: #3a5199;
+    -fx-text-fill: #c5ae66;
+    -fx-font: 16px "sans-serif";
+}
+
+.status-36{
+    -fx-background-color: #31a2ac;
+    -fx-text-fill: #ce5d53;
+    -fx-font: 16px "sans-serif";
+}
+
+.status-37{
+    -fx-background-color: #cdab81;
+    -fx-text-fill: #32547e;
+    -fx-font: 16px "sans-serif";
+}
+
+.status-38{
+    -fx-background-color: #c29545;
+    -fx-text-fill: #cb98a3;
+    -fx-font: 16px "sans-serif";
+}
+
+.status-39{
+    -fx-background-color: #42313a;
+    -fx-text-fill: #3d6aba;
+    -fx-font: 16px "sans-serif";
+}
+
+.status-40{
+    -fx-background-color: #fe0000;
+    -fx-text-fill: #01ffff;
+    -fx-font: 16px "sans-serif";
+}
+
+.legend-item{
+        -fx-text-fill: #b34a0a;
+    -fx-font: 16px "sans-serif";
+}

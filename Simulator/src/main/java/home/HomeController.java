@@ -31,14 +31,14 @@ public class HomeController implements Initializable {
     /**
      * Initializes the controller class.
      */
-    
-   
+
+
     @FXML
     private BorderPane scenePane;
-    
-     @FXML
+
+    @FXML
     private JFXHamburger hamburger;
-    HamburgerSlideCloseTransition transition; 
+    HamburgerSlideCloseTransition transition;
 
     @FXML
     private JFXButton newSimulation;
@@ -53,10 +53,10 @@ public class HomeController implements Initializable {
     void actionHandler(ActionEvent event) throws IOException {
         Stage window = (Stage) scenePane.getScene().getWindow();
         if(event.getSource() == exit){
-           window.close();
-           System.out.println("Programme Terminated");
+            window.close();
+            System.out.println("Programme Terminated");
         }
-        
+
 //        else if(event.getSource() == team){
 //            Parent root = FXMLLoader.load(getClass().getResource("/home/home.fxml"));            
 //            window.setScene(new Scene(root));
@@ -71,25 +71,25 @@ public class HomeController implements Initializable {
         }
 
     }
-    
-   
 
-    
+
+
+
     @FXML
     void hamburgerHandler(MouseEvent event) {
         if(event.getSource() == hamburger){
             transition.setRate(transition.getRate()*-1);
             transition.play();
         }
-         
+
     }
 
-    
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
         transition = new HamburgerSlideCloseTransition(hamburger);
         transition.setRate(-1);
-    }    
-    
+    }
+
 }

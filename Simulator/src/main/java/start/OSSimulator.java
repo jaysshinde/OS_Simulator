@@ -22,8 +22,7 @@ public class OSSimulator extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/start/StartPage.fxml"));
-        //FXMLLoader loader = new FXMLLoader(getClass().getResource("start/StartPage.fxml"));
-        //loader.setController(new MainController());
+
         Scene scene = new Scene(root);
         
         stage.setScene(scene);
