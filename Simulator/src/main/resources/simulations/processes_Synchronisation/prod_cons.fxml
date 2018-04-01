@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1079.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simulations.processes_Synchronisation.ProdConController">
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="20.0" style="-fx-background-color: #191919;" BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="CENTER" prefHeight="37.0" prefWidth="388.0" text="Process Synchronization" textFill="WHITE">
+                    <font>
+                        <Font name="Ubuntu Light" size="30.0" />
+                    </font>
+                </Label>
+                <Region prefHeight="49.0" prefWidth="454.0" />
+                <Label alignment="CENTER" contentDisplay="RIGHT" graphicTextGap="5.0" prefHeight="49.0" prefWidth="192.0" text="OS Simulator" textFill="WHITE">
+                    <font>
+                        <Font name="TakaoPGothic" size="20.0" />
+                    </font>
+                    <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="LINUX" size="40" wrappingWidth="32.42856979370117" />
+                    </graphic>
+                </Label>
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </HBox>
+    </top>
+    <center>
+        <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <content>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="10000.0" prefWidth="1080.0" style="-fx-background-color: #ffffff;">
+                    <children>
+                        <VBox fx:id="vbox" alignment="TOP_CENTER" prefHeight="10000.0" prefWidth="1080.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <children>
+                                <AnchorPane prefHeight="74.0" prefWidth="1080.0" style="-fx-background-color: #1a33D5;">
+                                    <children>
+                                        <Label alignment="CENTER" prefHeight="73.0" prefWidth="746.0" style="-fx-wrap-text: true; -fx-alignment: center;" text="Producer Consumer" textFill="WHITE">
+                                            <font>
+                                                <Font size="30.0" />
+                                            </font>
+                                        </Label>
+                                        <JFXButton fx:id="back" buttonType="RAISED" graphicTextGap="6.0" layoutX="930.0" layoutY="7.0" onAction="#actionHandler" prefHeight="58.0" prefWidth="105.0" style="-fx-background-color: #fe0000;" text="Back" textFill="WHITE">
+                                            <font>
+                                                <Font name="Ubuntu Light" size="20.0" />
+                                            </font>
+                                            <graphic>
+                                                <FontAwesomeIconView fill="#dfe2db" glyphName="REMOVE" size="25" />
+                                            </graphic>
+                                        </JFXButton>
+                                    </children>
+                                </AnchorPane>
+                                <VBox layoutX="50.0" prefHeight="569.0" prefWidth="1080.0">
+                                    <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="133.0" prefWidth="1080.0" spacing="20.0">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <children>
+                                              <JFXButton fx:id="produce" buttonType="RAISED" onAction="#buttonEventHandler" prefHeight="62.0" prefWidth="248.0" style="-fx-background-color: #fe0000;" text="Produce" textFill="WHITE">
+                                                  <font>
+                                                      <Font size="20.0" />
+                                                  </font>
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="CREDIT-CARD" size="40" text="" wrappingWidth="32.42856979370117" />
+                                       </graphic>
+                                              </JFXButton>
+                                    <JFXButton fx:id="consume" buttonType="RAISED" onAction="#buttonEventHandler" prefHeight="62.0" prefWidth="248.0" style="-fx-background-color: #fe0000;" text="Consume" textFill="WHITE">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="510.0" />
+                                       </HBox.margin>
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="LINUX" size="40" text="" wrappingWidth="32.42856979370117" />
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                              </HBox>
+                                        <JFXButton fx:id="buffer0" buttonType="RAISED" onAction="#buttonEventHandler" prefHeight="62.0" prefWidth="248.0" style="-fx-background-color: #89da59;" text="Buffer 0">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets left="400.0" top="50.0" />
+                                            </VBox.margin>
+                                        </JFXButton>
+                                        <JFXButton fx:id="buffer1" buttonType="RAISED" onAction="#buttonEventHandler" prefHeight="62.0" prefWidth="248.0" style="-fx-background-color: #89da59;" text="Buffer 1">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets left="400.0" />
+                                            </VBox.margin>
+                                        </JFXButton>
+                              <JFXButton fx:id="buffer2" buttonType="RAISED" layoutX="410.0" layoutY="99.0" onAction="#buttonEventHandler" prefHeight="62.0" prefWidth="248.0" style="-fx-background-color: #89da59;" text="Buffer 2">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="400.0" />
+                                 </VBox.margin>
+                              </JFXButton>
+                              <JFXButton fx:id="buffer3" buttonType="RAISED" layoutX="410.0" layoutY="211.0" onAction="#buttonEventHandler" prefHeight="62.0" prefWidth="248.0" style="-fx-background-color: #89da59;" text="Buffer 3">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="400.0" />
+                                 </VBox.margin>
+                              </JFXButton>
+                              <JFXButton fx:id="buffer4" buttonType="RAISED" layoutX="10.0" layoutY="335.0" onAction="#buttonEventHandler" prefHeight="62.0" prefWidth="248.0" style="-fx-background-color: #89da59;" text="Buffer 4">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="400.0" />
+                                 </VBox.margin>
+                              </JFXButton>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+    </center>
+</BorderPane>

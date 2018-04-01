@@ -65,34 +65,34 @@
                                         </JFXButton>
                                     </children>
                                 </AnchorPane>
-                        <VBox layoutX="50.0">
-                           <children>
-                              <JFXButton fx:id="prodcons" buttonType="RAISED" onAction="#buttonEventHandler" prefHeight="62.0" prefWidth="248.0" style="-fx-background-color: #89da59;" text="Producer Consumer">
-                                 <font>
-                                    <Font size="20.0" />
-                                 </font>
-                                 <VBox.margin>
-                                    <Insets bottom="50.0" left="400.0" top="50.0" />
-                                 </VBox.margin>
-                              </JFXButton>
-                              <JFXButton fx:id="dinphil" buttonType="RAISED" onAction="#buttonEventHandler" prefHeight="62.0" prefWidth="248.0" style="-fx-background-color: #89da59;" text="Dining Philosophers">
-                                 <font>
-                                    <Font size="20.0" />
-                                 </font>
-                                 <VBox.margin>
-                                    <Insets bottom="50.0" left="400.0" />
-                                 </VBox.margin>
-                              </JFXButton>
-                              <JFXButton fx:id="readwrite" buttonType="RAISED" onAction="#buttonEventHandler" prefHeight="62.0" prefWidth="248.0" style="-fx-background-color: #89da59;" text="Readers Writers">
-                                 <font>
-                                    <Font size="20.0" />
-                                 </font>
-                                 <VBox.margin>
-                                    <Insets left="400.0" />
-                                 </VBox.margin>
-                              </JFXButton>
-                           </children>
-                        </VBox>
+                                <VBox layoutX="50.0">
+                                    <children>
+                                        <JFXButton fx:id="prodcons" buttonType="RAISED" onAction="#buttonEventHandler" prefHeight="62.0" prefWidth="248.0" style="-fx-background-color: #89da59;" text="Producer Consumer">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets bottom="50.0" left="400.0" top="50.0" />
+                                            </VBox.margin>
+                                        </JFXButton>
+                                        <JFXButton fx:id="dinphil" buttonType="RAISED" onAction="#buttonEventHandler" prefHeight="62.0" prefWidth="248.0" style="-fx-background-color: #89da59;" text="Dining Philosophers">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets bottom="50.0" left="400.0" />
+                                            </VBox.margin>
+                                        </JFXButton>
+                                        <JFXButton fx:id="readwrite" buttonType="RAISED" onAction="#buttonEventHandler" prefHeight="62.0" prefWidth="248.0" style="-fx-background-color: #89da59;" text="Readers Writers">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets left="400.0" />
+                                            </VBox.margin>
+                                        </JFXButton>
+                                    </children>
+                                </VBox>
                                 <Label fx:id="prl" alignment="CENTER" prefHeight="55.0" prefWidth="509.0">
                                     <font>
                                         <Font size="25.0" />
