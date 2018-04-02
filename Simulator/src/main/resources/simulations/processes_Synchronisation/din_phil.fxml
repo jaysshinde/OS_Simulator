@@ -2,6 +2,7 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTextField?>
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
@@ -13,12 +14,12 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1079.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simulations.processes_Synchronisation.SynchronisationController">
+<BorderPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1079.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simulations.processes_Synchronisation.DinPhilController">
     <top>
         <HBox alignment="CENTER_LEFT" spacing="20.0" style="-fx-background-color: #191919;" BorderPane.alignment="CENTER">
             <children>
                 <JFXHamburger fx:id="hamburger" alignment="CENTER" onMouseClicked="#hamburgerHandler" prefHeight="49.0" prefWidth="55.0" styleClass="jfx-hamburger" stylesheets="@../../styles/styles.css" />
-                <Label alignment="CENTER" prefHeight="37.0" prefWidth="388.0" text="Process Synchronization" textFill="WHITE">
+                <Label alignment="CENTER" prefHeight="37.0" prefWidth="388.0" text="Dining Philosophers" textFill="WHITE">
                     <font>
                         <Font name="Ubuntu Light" size="30.0" />
                     </font>
@@ -48,14 +49,14 @@
                     <children>
                         <VBox fx:id="vbox" alignment="TOP_CENTER" prefHeight="10000.0" prefWidth="1080.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                             <children>
-                                <AnchorPane prefHeight="205.0" prefWidth="1080.0" style="-fx-background-color: #1a33D5;">
+                                <AnchorPane prefHeight="52.0" prefWidth="1080.0" style="-fx-background-color: #1a33D5;">
                                     <children>
-                                        <Label alignment="CENTER" prefHeight="194.0" prefWidth="746.0" style="-fx-wrap-text: true; -fx-alignment: center;" text="Choose any problem to simulate" textFill="WHITE">
+                                        <Label alignment="CENTER" prefHeight="61.0" prefWidth="746.0" style="-fx-wrap-text: true; -fx-alignment: center;" text="Click to simulate" textFill="WHITE">
                                             <font>
-                                                <Font name="Ubuntu Light" size="40.0" />
+                                                <Font size="30.0" />
                                             </font>
                                         </Label>
-                                        <JFXButton fx:id="back" buttonType="RAISED" graphicTextGap="6.0" layoutX="945.0" layoutY="138.0" onAction="#actionHandler" prefHeight="58.0" prefWidth="105.0" style="-fx-background-color: #fe0000;" text="Back" textFill="WHITE">
+                                        <JFXButton fx:id="back" buttonType="RAISED" graphicTextGap="6.0" layoutX="949.0" layoutY="2.0" onAction="#actionHandler" prefHeight="58.0" prefWidth="105.0" style="-fx-background-color: #fe0000;" text="Back" textFill="WHITE">
                                             <font>
                                                 <Font name="Ubuntu Light" size="20.0" />
                                             </font>
@@ -65,38 +66,132 @@
                                         </JFXButton>
                                     </children>
                                 </AnchorPane>
-                                <VBox layoutX="50.0">
+                                <VBox layoutX="50.0" prefHeight="349.0" prefWidth="1080.0">
                                     <children>
-                                        <JFXButton fx:id="prodcons" buttonType="RAISED" onAction="#buttonEventHandler" prefHeight="62.0" prefWidth="248.0" style="-fx-background-color: #89da59;" text="Producer Consumer">
+                                        <JFXButton fx:id="phil0" buttonType="RAISED" layoutX="410.0" layoutY="60.0" onAction="#buttonEventHandler" prefHeight="62.0" prefWidth="248.0" style="-fx-background-color: #89da59;" text="Philosopher 0">
                                             <font>
                                                 <Font size="20.0" />
                                             </font>
                                             <VBox.margin>
-                                                <Insets bottom="50.0" left="400.0" top="50.0" />
+                                                <Insets left="10.0" top="30.0" />
                                             </VBox.margin>
                                         </JFXButton>
-                                        <JFXButton fx:id="dinphil" buttonType="RAISED" onAction="#buttonEventHandler" prefHeight="62.0" prefWidth="248.0" style="-fx-background-color: #89da59;" text="Dining Philosophers">
+                                        <JFXButton fx:id="phil1" buttonType="RAISED" layoutX="410.0" layoutY="60.0" onAction="#buttonEventHandler" prefHeight="62.0" prefWidth="248.0" style="-fx-background-color: #89da59;" text="Philosopher 1">
                                             <font>
                                                 <Font size="20.0" />
                                             </font>
                                             <VBox.margin>
-                                                <Insets bottom="50.0" left="400.0" />
+                                                <Insets left="10.0" />
                                             </VBox.margin>
                                         </JFXButton>
-                                        <JFXButton fx:id="readwrite" buttonType="RAISED" onAction="#buttonEventHandler" prefHeight="62.0" prefWidth="248.0" style="-fx-background-color: #89da59;" text="Readers Writers">
+                                        <JFXButton fx:id="phil2" buttonType="RAISED" layoutX="410.0" layoutY="60.0" onAction="#buttonEventHandler" prefHeight="62.0" prefWidth="248.0" style="-fx-background-color: #89da59;" text="Philosopher 2">
                                             <font>
                                                 <Font size="20.0" />
                                             </font>
                                             <VBox.margin>
-                                                <Insets left="400.0" />
+                                                <Insets left="10.0" />
+                                            </VBox.margin>
+                                        </JFXButton>
+                                        <JFXButton fx:id="phil3" buttonType="RAISED" layoutX="410.0" layoutY="60.0" onAction="#buttonEventHandler" prefHeight="62.0" prefWidth="248.0" style="-fx-background-color: #89da59;" text="Philosopher 3">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets left="10.0" />
+                                            </VBox.margin>
+                                        </JFXButton>
+                                        <JFXButton fx:id="phil4" buttonType="RAISED" layoutX="410.0" layoutY="60.0" onAction="#buttonEventHandler" prefHeight="62.0" prefWidth="248.0" style="-fx-background-color: #89da59;" text="Philosopher 4">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets left="10.0" />
+                                            </VBox.margin>
+                                        </JFXButton>
+                                        <JFXButton fx:id="fork0" buttonType="RAISED" layoutX="410.0" layoutY="240.0" onAction="#buttonEventHandler" prefHeight="62.0" prefWidth="248.0" style="-fx-background-color: #c9d009;" text="Fork 0">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets left="800.0" top="-300.0" />
+                                            </VBox.margin>
+                                        </JFXButton>
+                                        <JFXButton fx:id="fork1" buttonType="RAISED" layoutX="410.0" layoutY="240.0" onAction="#buttonEventHandler" prefHeight="62.0" prefWidth="248.0" style="-fx-background-color: #c9d009;" text="Fork 1">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets left="800.0" />
+                                            </VBox.margin>
+                                        </JFXButton>
+                                        <JFXButton fx:id="fork2" buttonType="RAISED" layoutX="10.0" layoutY="408.0" onAction="#buttonEventHandler" prefHeight="62.0" prefWidth="248.0" style="-fx-background-color: #c9d009;" text="Fork 2">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets left="800.0" />
+                                            </VBox.margin>
+                                        </JFXButton>
+                                        <JFXButton fx:id="fork3" buttonType="RAISED" layoutX="10.0" layoutY="412.0" onAction="#buttonEventHandler" prefHeight="62.0" prefWidth="248.0" style="-fx-background-color: #c9d009;" text="Fork 3">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets left="800.0" />
+                                            </VBox.margin>
+                                        </JFXButton>
+                                        <JFXButton fx:id="fork4" buttonType="RAISED" layoutX="10.0" layoutY="416.0" onAction="#buttonEventHandler" prefHeight="62.0" prefWidth="248.0" style="-fx-background-color: #c9d009;" text="Fork 4">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets left="800.0" />
                                             </VBox.margin>
                                         </JFXButton>
                                     </children>
+                                    <VBox.margin>
+                                        <Insets />
+                                    </VBox.margin>
                                 </VBox>
-                                <Label fx:id="prl" alignment="CENTER" prefHeight="55.0" prefWidth="509.0">
+                                <JFXTextField fx:id="db" focusColor="#4cb5f5" labelFloat="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="41.0" prefWidth="330.0" promptText="Write into DataBase" unFocusColor="#ff420e">
                                     <font>
-                                        <Font size="25.0" />
+                                        <Font size="18.0" />
                                     </font>
+                                    <VBox.margin>
+                                        <Insets bottom="20.0" />
+                                    </VBox.margin>
+                                </JFXTextField>
+                                <Label fx:id="prl1" alignment="CENTER" prefHeight="34.0" prefWidth="179.0" text="Eating" textFill="RED">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets left="800.0" top="-20.0" />
+                                    </VBox.margin>
+                                </Label>
+                                <Label fx:id="prl2" alignment="CENTER" prefHeight="34.0" prefWidth="179.0" text="Hungry" textFill="#c9d009">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets left="800.0" />
+                                    </VBox.margin>
+                                </Label>
+                                <Label fx:id="prl4" alignment="CENTER" prefHeight="34.0" prefWidth="179.0" text="Idle" textFill="#89da59">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets left="800.0" />
+                                    </VBox.margin>
+                                </Label>
+                                <Label fx:id="prl5" alignment="CENTER" layoutX="861.0" layoutY="594.0" prefHeight="34.0" prefWidth="256.0" text="Readers have more priority">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets bottom="40.0" right="60.0" top="-20.0" />
+                                    </VBox.margin>
                                 </Label>
                             </children>
                         </VBox>
