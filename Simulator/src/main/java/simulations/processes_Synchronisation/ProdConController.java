@@ -83,22 +83,27 @@ public class ProdConController implements Initializable {
                 if (counter==0) {
                     //change button0 text
                     buffer0.setText("Full");
+                    buffer0.setStyle("-fx-background-color: #ff0000; ");
                 }
                 else  if (counter==1){
                         //change button1 text
                     buffer1.setText("Full");
+                    buffer1.setStyle("-fx-background-color: #ff0000; ");
                 }
                 else if (counter==2) {
                     //change button2 text
                     buffer2.setText("Full");
+                    buffer2.setStyle("-fx-background-color: #ff0000; ");
                 }
                 else if (counter==3) {
                     //change button3 text
                     buffer3.setText("Full");
+                    buffer3.setStyle("-fx-background-color: #ff0000; ");
                 }
                 else if (counter==4) {
                     //change button4 text
                     buffer4.setText("Full");
+                    buffer4.setStyle("-fx-background-color: #ff0000; ");
                 }
 
 
@@ -117,24 +122,29 @@ public class ProdConController implements Initializable {
                 if (counter==0) {
                     //change button0 text
                     buffer0.setText("Empty");
+                    buffer0.setStyle("-fx-background-color: #89da59; ");
                     //System.out.println("COK");
 
                 }
                 else  if (counter==1){
                     //change button1 text
                     buffer1.setText("Empty");
+                    buffer1.setStyle("-fx-background-color: #89da59; ");
                 }
                 else if (counter==2) {
                     //change button2 text
                     buffer2.setText("Empty");
+                    buffer2.setStyle("-fx-background-color: #89da59; ");
                 }
                 else if (counter==3) {
                     //change button3 text
                     buffer3.setText("Empty");
+                    buffer3.setStyle("-fx-background-color: #89da59; ");
                 }
                 else if (counter==4) {
                     //change button4 text
                     buffer4.setText("Empty");
+                    buffer4.setStyle("-fx-background-color: #89da59; ");
                 }
                 if(counter==-1){
                     System.out.println("COK");
