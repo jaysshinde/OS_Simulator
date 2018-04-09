@@ -2,7 +2,6 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXHamburger?>
-<?import com.jfoenix.controls.JFXTextField?>
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
@@ -47,33 +46,33 @@
             <content>
                 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="10000.0" prefWidth="1080.0" style="-fx-background-color: #ffffff;">
                     <children>
-                        <VBox fx:id="vbox" alignment="TOP_CENTER" prefHeight="10000.0" prefWidth="1080.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <VBox fx:id="vbox" alignment="TOP_CENTER" layoutX="-15.0" layoutY="-100.0" prefHeight="10003.0" prefWidth="1169.0" AnchorPane.bottomAnchor="97.0" AnchorPane.leftAnchor="-15.0" AnchorPane.rightAnchor="-74.0" AnchorPane.topAnchor="-100.0">
                             <children>
-                                <AnchorPane prefHeight="52.0" prefWidth="1080.0" style="-fx-background-color: #1a33D5;">
+                                <VBox layoutX="50.0" prefHeight="526.0" prefWidth="1169.0">
                                     <children>
-                                        <Label alignment="CENTER" prefHeight="61.0" prefWidth="746.0" style="-fx-wrap-text: true; -fx-alignment: center;" text="Click to simulate" textFill="WHITE">
-                                            <font>
-                                                <Font size="30.0" />
-                                            </font>
-                                        </Label>
-                                        <JFXButton fx:id="back" buttonType="RAISED" graphicTextGap="6.0" layoutX="949.0" layoutY="2.0" onAction="#actionHandler" prefHeight="58.0" prefWidth="105.0" style="-fx-background-color: #fe0000;" text="Back" textFill="WHITE">
-                                            <font>
-                                                <Font name="Ubuntu Light" size="20.0" />
-                                            </font>
-                                            <graphic>
-                                                <FontAwesomeIconView fill="#dfe2db" glyphName="REMOVE" size="25" />
-                                            </graphic>
-                                        </JFXButton>
-                                    </children>
-                                </AnchorPane>
-                                <VBox layoutX="50.0" prefHeight="349.0" prefWidth="1080.0">
-                                    <children>
+                                      <AnchorPane prefHeight="165.0" prefWidth="1169.0" style="-fx-background-color: #1a33D5;">
+                                          <children>
+                                    <Label alignment="CENTER" layoutX="14.0" layoutY="101.0" prefHeight="57.0" prefWidth="615.0" style="-fx-wrap-text: true; -fx-alignment: center;" text="Click to simulate" textFill="WHITE">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXButton fx:id="back" buttonType="RAISED" graphicTextGap="6.0" layoutX="932.0" layoutY="102.0" onAction="#actionHandler" prefHeight="58.0" prefWidth="105.0" style="-fx-background-color: #fe0000;" text="Back" textFill="WHITE">
+                                       <font>
+                                          <Font name="Ubuntu Light" size="20.0" />
+                                       </font>
+                                       <graphic>
+                                          <FontAwesomeIconView fill="#dfe2db" glyphName="REMOVE" size="25" />
+                                       </graphic>
+                                    </JFXButton>
+                                          </children>
+                                      </AnchorPane>
                                         <JFXButton fx:id="phil0" buttonType="RAISED" layoutX="410.0" layoutY="60.0" onAction="#buttonEventHandler" prefHeight="62.0" prefWidth="248.0" style="-fx-background-color: #89da59;" text="Philosopher 0">
                                             <font>
                                                 <Font size="20.0" />
                                             </font>
                                             <VBox.margin>
-                                                <Insets left="10.0" top="30.0" />
+                                                <Insets left="40.0" top="30.0" />
                                             </VBox.margin>
                                         </JFXButton>
                                         <JFXButton fx:id="phil1" buttonType="RAISED" layoutX="410.0" layoutY="60.0" onAction="#buttonEventHandler" prefHeight="62.0" prefWidth="248.0" style="-fx-background-color: #89da59;" text="Philosopher 1">
@@ -81,7 +80,7 @@
                                                 <Font size="20.0" />
                                             </font>
                                             <VBox.margin>
-                                                <Insets left="10.0" />
+                                                <Insets left="40.0" />
                                             </VBox.margin>
                                         </JFXButton>
                                         <JFXButton fx:id="phil2" buttonType="RAISED" layoutX="410.0" layoutY="60.0" onAction="#buttonEventHandler" prefHeight="62.0" prefWidth="248.0" style="-fx-background-color: #89da59;" text="Philosopher 2">
@@ -89,7 +88,7 @@
                                                 <Font size="20.0" />
                                             </font>
                                             <VBox.margin>
-                                                <Insets left="10.0" />
+                                                <Insets left="40.0" />
                                             </VBox.margin>
                                         </JFXButton>
                                         <JFXButton fx:id="phil3" buttonType="RAISED" layoutX="410.0" layoutY="60.0" onAction="#buttonEventHandler" prefHeight="62.0" prefWidth="248.0" style="-fx-background-color: #89da59;" text="Philosopher 3">
@@ -97,7 +96,7 @@
                                                 <Font size="20.0" />
                                             </font>
                                             <VBox.margin>
-                                                <Insets left="10.0" />
+                                                <Insets left="40.0" />
                                             </VBox.margin>
                                         </JFXButton>
                                         <JFXButton fx:id="phil4" buttonType="RAISED" layoutX="410.0" layoutY="60.0" onAction="#buttonEventHandler" prefHeight="62.0" prefWidth="248.0" style="-fx-background-color: #89da59;" text="Philosopher 4">
@@ -105,7 +104,7 @@
                                                 <Font size="20.0" />
                                             </font>
                                             <VBox.margin>
-                                                <Insets left="10.0" />
+                                                <Insets left="40.0" />
                                             </VBox.margin>
                                         </JFXButton>
                                         <JFXButton fx:id="fork0" buttonType="RAISED" layoutX="410.0" layoutY="240.0" onAction="#buttonEventHandler" prefHeight="62.0" prefWidth="248.0" style="-fx-background-color: #c9d009;" text="Fork 0">
@@ -153,20 +152,12 @@
                                         <Insets />
                                     </VBox.margin>
                                 </VBox>
-                                <JFXTextField fx:id="db" focusColor="#4cb5f5" labelFloat="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="41.0" prefWidth="330.0" promptText="Write into DataBase" unFocusColor="#ff420e">
-                                    <font>
-                                        <Font size="18.0" />
-                                    </font>
-                                    <VBox.margin>
-                                        <Insets bottom="20.0" />
-                                    </VBox.margin>
-                                </JFXTextField>
                                 <Label fx:id="prl1" alignment="CENTER" prefHeight="34.0" prefWidth="179.0" text="Eating" textFill="RED">
                                     <font>
                                         <Font size="18.0" />
                                     </font>
                                     <VBox.margin>
-                                        <Insets left="800.0" top="-20.0" />
+                                        <Insets left="800.0" top="20.0" />
                                     </VBox.margin>
                                 </Label>
                                 <Label fx:id="prl2" alignment="CENTER" prefHeight="34.0" prefWidth="179.0" text="Hungry" textFill="#c9d009">
@@ -177,7 +168,7 @@
                                         <Insets left="800.0" />
                                     </VBox.margin>
                                 </Label>
-                                <Label fx:id="prl4" alignment="CENTER" prefHeight="34.0" prefWidth="179.0" text="Idle" textFill="#89da59">
+                                <Label fx:id="prl4" alignment="CENTER" prefHeight="34.0" prefWidth="179.0" text="Thinking" textFill="#89da59">
                                     <font>
                                         <Font size="18.0" />
                                     </font>
@@ -185,14 +176,16 @@
                                         <Insets left="800.0" />
                                     </VBox.margin>
                                 </Label>
-                                <Label fx:id="prl5" alignment="CENTER" layoutX="861.0" layoutY="594.0" prefHeight="34.0" prefWidth="256.0" text="Readers have more priority">
-                                    <font>
-                                        <Font size="18.0" />
-                                    </font>
-                                    <VBox.margin>
-                                        <Insets bottom="40.0" right="60.0" top="-20.0" />
-                                    </VBox.margin>
-                                </Label>
+                        <Label fx:id="prl5" alignment="CENTER" prefHeight="34.0" prefWidth="361.0" text="Philosopher i uses forks i and i-1 to eat.">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <FontAwesomeIconView glyphName="BOOK" size="40" wrappingWidth="32.42856979370117">
+                           <font>
+                              <Font size="37.0" />
+                           </font>
+                        </FontAwesomeIconView>
                             </children>
                         </VBox>
                     </children>
