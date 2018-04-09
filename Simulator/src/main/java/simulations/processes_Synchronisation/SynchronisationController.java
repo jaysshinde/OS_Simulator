@@ -62,23 +62,36 @@ public class SynchronisationController implements Initializable {
     @FXML
     void buttonEventHandler(ActionEvent event) throws IOException {
         if (event.getSource() == prodcons) {
-            System.out.println("Producer Consumer button pressed\n");
+            //System.out.println("Producer Consumer button pressed\n");
             Stage window = (Stage) scenePane.getScene().getWindow();
             Parent root = FXMLLoader.load(getClass().getResource("/simulations/processes_Synchronisation/prod_cons.fxml"));
             window.setScene(new Scene(root));
             window.show();
         } else if (event.getSource() == readwrite) {
-            System.out.println("Readers Writers button pressed\n");
+            //System.out.println("Readers Writers button pressed\n");
             Stage window = (Stage) scenePane.getScene().getWindow();
+           // System.out.println("New Window Created");
+
             Parent root = FXMLLoader.load(getClass().getResource("/simulations/processes_Synchronisation/read_write.fxml"));
+            //System.out.println("FXML Loaded");
+
             window.setScene(new Scene(root));
             window.show();
         } else if (event.getSource() == dinphil) {
-            System.out.println("Dining Philosophers button pressed\n");
+            //System.out.println("Dining Philosophers button pressed\n");
             Stage window = (Stage) scenePane.getScene().getWindow();
-            Parent root = FXMLLoader.load(getClass().getResource(" /simulations/processes_Synchronisation/din_phil.fxml"));
-            window.setScene(new Scene(root));
-            window.show();
+            System.out.println("New Window Created");
+            try {
+                Parent root = FXMLLoader.load(getClass().getResource("/simulations/processes_Synchronisation/din_phil.fxml"));
+                //System.out.println("FXML Loaded");
+                window.setScene(new Scene(root));
+                window.show();
+            }
+            catch(IOException e)
+            {
+                e.printStackTrace();
+            }
+
         }
     }
 
