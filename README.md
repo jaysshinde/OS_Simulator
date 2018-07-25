@@ -2,8 +2,7 @@
 A simulation of operating system concepts using Java and JavaFX
 
 ## Get Started
-1.  Get IntelliJ IDEA. [Download](https://www.jetbrains.com/idea/download/#section=linux)  
-    Strongly Recommended since Eclipse is a pain to use and I'd rather die than use NetBeans (Have fun with Gradle integration hlpr98). Scene Builder is integrated into IntelliJ so you don't need to set up anything for that either.
+1.  Get IntelliJ IDEA. [Download](https://www.jetbrains.com/idea/download/#section=linux). Scene Builder is integrated into IntelliJ so you don't need to set up anything for that either.
 2.  Clone this Repository and open it using IntelliJ.
 4.  To build the project you first need to open the gradle tab on IntelliJ. (Hover on the bottom left cornor and select Gradle). Open the javafx tab under the Tasks menu in the Gradle toolbar and choose jfxJar to build the project and jfxRun to run the built jar.
 5.  TC HF.
